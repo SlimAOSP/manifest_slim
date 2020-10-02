@@ -23,7 +23,7 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 $ . build/envsetup.sh
 
 # Choose a target
-$ lunch slimaosp_$device-userdebug
+$ lunch aosp_$device-userdebug
 
 # Build the code
 $ mka bacon -jX
