@@ -11,6 +11,11 @@
 # Initialize local repository
 repo init -u https://github.com/SlimAOSP/manifest_slimaosp -b ten
 
+You can alternatively use this command to save some space and time :
+
+```bash
+repo init --depth=1 -u https://github.com/SlimAOSP/manifest_slimaosp.git -b ten
+
 # Sync
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
