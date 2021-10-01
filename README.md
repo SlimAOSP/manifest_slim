@@ -19,6 +19,10 @@ repo init --depth=1 -u https://github.com/SlimAOSP/manifest_slimaosp.git -b ten
 # Sync
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
+```
+You can just use `repo sync` or above command, but this will save you from lot of terminal spam, data and time.
+```bash
+repo sync -c -q --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 
 ### Build ###
 
